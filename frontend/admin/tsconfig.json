@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    // 编译目标版本
+    "target": "ES2020",
+    // 启用实验性的装饰器特性
+    "useDefineForClassFields": true,
+    // 模块系统
+    "module": "ESNext",
+    // 包含的库文件
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // 跳过库文件的类型检查
+    "skipLibCheck": true,
+    // 模块解析策略
+    "moduleResolution": "bundler",
+    // 允许导入扩展名
+    "allowImportingTsExtensions": true,
+    // 允许导入JSON文件
+    "resolveJsonModule": true,
+    // 确保每个文件都是一个模块
+    "isolatedModules": true,
+    // 不输出编译文件
+    "noEmit": true,
+    // 保留JSX语法
+    "jsx": "preserve",
+    // 启用严格模式
+    "strict": true,
+    // 检查未使用的局部变量
+    "noUnusedLocals": true,
+    // 检查未使用的参数
+    "noUnusedParameters": true,
+    // 检查switch语句贯穿
+    "noFallthroughCasesInSwitch": true,
+    // 基准目录
+    "baseUrl": ".",
+    // 路径别名配置
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  // 包含的文件
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 项目引用
+  "references": [{ "path": "./tsconfig.node.json" }]
+} 
